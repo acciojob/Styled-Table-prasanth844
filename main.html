@@ -1,15 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- add table here -->
+	<title>Styled Table</title>
+	<style>
+		table {
+			width: 70%;
+			margin: 40px auto;
+			border-collapse: collapse;
+			font-family: Arial, sans-serif;
+		}
 
-        
+		thead {
+			background-color: #2c3e50;
+			color: white;
+		}
+
+		th, td {
+			border: 1px solid #ccc;
+			padding: 12px;
+			text-align: center;
+		}
+
+		tbody tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		tbody tr:hover {
+			background-color: #e6f2ff;
+		}
+
+		th {
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		caption {
+			margin-bottom: 15px;
+			font-size: 22px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+
+	<table>
+		<caption>CBSE Class 12 Result Sheet</caption>
+
+		<thead>
+			<tr>
+				<th>Student Name</th>
+				<th>Maths</th>
+				<th>Physics</th>
+				<th>Chemistry</th>
+				<th>Total</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>Amit</td>
+				<td>85</td>
+				<td>78</td>
+				<td>88</td>
+				<td>251</td>
+			</tr>
+
+			<tr>
+				<td>Riya</td>
+				<td>92</td>
+				<td>90</td>
+				<td>95</td>
+				<td>277</td>
+			</tr>
+
+			<tr>
+				<td>Karan</td>
+				<td>76</td>
+				<td>80</td>
+				<td>72</td>
+				<td>228</td>
+			</tr>
+		</tbody>
+	</table>
+
 </body>
 </html>
